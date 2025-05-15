@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>루카 바코드 리셀 분석기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>루카 바코드 리셀 분석기</h1>
+  <div>
+    <label for="skuInput">SKU (자동입력 또는 직접 입력):</label>
+    <input type="text" id="skuInput">
+  </div>
+  <div>
+    <label for="costInput">국내 원가 (₩):</label>
+    <input type="number" id="costInput">
+  </div>
+  <button id="analyzeBtn">분석 시작</button>
+  <div id="resultBox" style="display:none;">
+    <h2>분석 결과</h2>
+    <div id="resultText"></div>
+  </div>
+  <div id="historyBox">
+    <h2>최근 분석 기록</h2>
+    <ul id="historyList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
